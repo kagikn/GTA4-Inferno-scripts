@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D1A3A31-DE00-4220-BC8E-054847B60D0C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inferno</RootNamespace>
+    <AssemblyName>Inferno.net</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InputChecker">
+      <HintPath>.\InputChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemListForm">
+      <HintPath>.\ItemListForm.dll</HintPath>
+    </Reference>
+    <Reference Include="ScriptHookDotNet">
+      <HintPath>.\ScriptHookDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InfernoScripts\Disabled\Civilians\MOD1.cs" />
+    <Compile Include="InfernoScripts\Disabled\Civilians\YokoNitoro.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\AutoRadioSet.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\BLISTA.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\CameraBreak.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\ForNicoNico\BoyomiController.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\ForNicoNico\LiveNicoAPI.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\ForNicoNico\NikoInfo.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\ForNicoNico\Stream\AsyncSocket.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\ForNicoNico\Stream\BufferSplitter.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\ForNicoNico\Stream\NullSplitter.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\ForNicoNico\Stream\ReadEventArgs.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\ForNicoNico\Stream\Stream.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\ForNicoNico\Stream\StreamBuffer.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\ForNicoNico\Trace\Logger.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\ForNicoNico\Trace\ObjectToTypeString.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\ForTestFeatures\test.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\ForTestFeatures\TEST2.cs" />
+    <None Include="InfernoScripts\Disabled\Misc\HeraBeatRate.cs" />
+    <None Include="InfernoScripts\Disabled\NoAvailable\Aleret.cs" />
+    <None Include="InfernoScripts\Disabled\NoAvailable\Grab.cs" />
+    <None Include="InfernoScripts\Disabled\NoAvailable\Lights.cs" />
+    <None Include="InfernoScripts\Disabled\NoAvailable\OTOtest.cs" />
+    <None Include="InfernoScripts\Disabled\Player\analysis.cs" />
+    <None Include="InfernoScripts\Disabled\Player\CarDamage.cs" />
+    <None Include="InfernoScripts\Disabled\Player\EmergencyEscape.cs" />
+    <None Include="InfernoScripts\Disabled\Player\FLARE.cs" />
+    <None Include="InfernoScripts\Disabled\Player\Light.cs" />
+    <None Include="InfernoScripts\Disabled\Player\NewCarDamage.cs" />
+    <None Include="InfernoScripts\Disabled\Player\Nikita.cs" />
+    <None Include="InfernoScripts\Disabled\Player\Sorilotn.cs" />
+    <None Include="InfernoScripts\Disabled\Player\SpeedMeter.cs" />
+    <None Include="InfernoScripts\Disabled\Sazae\ISASAKA.cs" />
+    <None Include="InfernoScripts\Disabled\Sazae\ISONO.cs" />
+    <None Include="InfernoScripts\Disabled\Sazae\NAKAJIMA.cs" />
+    <None Include="InfernoScripts\Disabled\Sazae\Niko.cs" />
+    <None Include="InfernoScripts\Disabled\World\chaostest.cs" />
+    <None Include="InfernoScripts\Disabled\World\Heli.cs" />
+    <None Include="InfernoScripts\Disabled\World\HumanCounter.cs" />
+    <None Include="InfernoScripts\Disabled\World\JAMMING.cs" />
+    <None Include="InfernoScripts\Disabled\World\Meteo.cs" />
+    <None Include="InfernoScripts\Disabled\World\UpperCam.cs" />
+    <Compile Include="InfernoScripts\Misc\Futtobi.cs" />
+    <Compile Include="InfernoScripts\Misc\Paru.cs" />
+    <Compile Include="InfernoScripts\Misc\PointForFeatures.cs" />
+    <Compile Include="InfernoScripts\Misc\Volga.cs" />
+    <Compile Include="InfernoScripts\Player\007.cs" />
+    <Compile Include="InfernoScripts\World\BlackOut.cs" />
+    <Compile Include="InfernoScripts\World\BombBat.cs" />
+    <Compile Include="InfernoScripts\Core\Cacher.cs" />
+    <Compile Include="InfernoScripts\Player\ShowPlayerCarHealthBar.cs" />
+    <Compile Include="InfernoScripts\World\ChaosHeli.cs" />
+    <Compile Include="InfernoScripts\Player\ArmorAndHealthSupplier.cs" />
+    <Compile Include="InfernoScripts\Civilians\CivilianCrazyDriving.cs" />
+    <Compile Include="InfernoScripts\Civilians\CivilianNitro.cs" />
+    <Compile Include="InfernoScripts\Player\DisplayCauseOfDeath.cs" />
+    <Compile Include="InfernoScripts\Player\DisplayCarDamageBars.cs" />
+    <Compile Include="InfernoScripts\Player\EmergencyExit.cs" />
+    <Compile Include="InfernoScripts\Player\Fluton.cs" />
+    <Compile Include="InfernoScripts\Player\ShowFriendsHealth.cs" />
+    <Compile Include="InfernoScripts\Civilians\CivilianRobberVehicle.cs" />
+    <Compile Include="InfernoScripts\World\Hanabi.cs" />
+    <Compile Include="InfernoScripts\World\HomingLauncher.cs" />
+    <Compile Include="InfernoScripts\Player\ShowDistanceDuringDeath.cs" />
+    <Compile Include="InfernoScripts\World\UnlockCarDoor.cs" />
+    <Compile Include="InfernoScripts\World\MeteoKai.cs" />
+    <Compile Include="InfernoScripts\World\TamifulPoliceCar.cs" />
+    <Compile Include="InfernoScripts\Player\DisplayCarDamageValue.cs" />
+    <Compile Include="InfernoScripts\Player\PlayerNitro.cs" />
+    <Compile Include="InfernoScripts\Core\Observe.cs" />
+    <Compile Include="InfernoScripts\Player\PlayerLowGravity.cs" />
+    <Compile Include="InfernoScripts\Player\PlayerRagdoll.cs" />
+    <Compile Include="InfernoScripts\World\RotateCars.cs" />
+    <Compile Include="InfernoScripts\Core\Share.cs" />
+    <Compile Include="InfernoScripts\World\SuperRPG.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\rpm_needle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InfernoScripts\Disabled\Misc\ForTestFeatures\test2.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
